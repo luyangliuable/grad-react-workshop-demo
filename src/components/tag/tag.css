@@ -1,0 +1,35 @@
+.search--tag {
+    --tag--color: #000; 
+    --search-field--height: 50px;
+    position: relative;
+    content: "";
+    background: var(--tag--color);
+    color: #FFF;
+    height: var(--search-field--height);
+    min-width: calc(1.5*var(--search-field--height));
+    padding: 0 10px 0 50px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search--tag:hover {
+    --tag--color: #888; 
+}
+
+.search--tag::after {
+    --search-field--height: 50px;
+    --gap: 2px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    background: var(--tag--color);
+    border-top: var(--gap) solid #FFF;
+    border-right: var(--gap) solid #FFF;
+    transform:translateX(50%) rotateZ(45deg);
+    height: var(--search-field--height);
+    width: var(--search-field--height);
+}
