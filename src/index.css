@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+}
+
+* {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.header {
+    width: 100vw;
+    padding: 4rem;
+    height: 200px;
+    border-bottom: 1px solid #DDD;
+    background: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    --search-field--height: 50px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    height: var(--search-field--height) !important;
+    padding: 20px 20px 20px 50px;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.search--wrapper {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.content {
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+}
+
+.content h2 {
+    text-align: left;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+
+.content a:hover {
+    text-decoration: underline;
+}
